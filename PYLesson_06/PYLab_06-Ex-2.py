@@ -1,3 +1,4 @@
+
 num=int(input("please enter a number"))
 
 factorial=1
