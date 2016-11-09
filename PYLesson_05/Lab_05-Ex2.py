@@ -20,11 +20,14 @@ if subTotal>2000:
 if subTotal<2000:
     global total
     total=subTotal+tax
-print("<<<<<<<< Receipt >>>>>>>>")
+print("<<<<<<<<<<Receipt >>>>>>>>>>")
 formatr(item1,itemP1)
 formatr(item2,itemP2)
 formatr(item3,itemP3)
 formatr(item4,itemP4)
+if subTotal>2000:
+    formatr("Discout",discount)
 formatr("Subtotal ", subTotal)
 formatr("Total", total)
+print("____________________________")
 print("Thank you!")
