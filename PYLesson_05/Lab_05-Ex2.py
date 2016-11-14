@@ -1,4 +1,3 @@
-
 item1=input("What was your first item?")
 itemP1=float(input("How much did it cost?"))
 item2=input("What was your second item?")
@@ -20,13 +19,17 @@ if subTotal>2000:
 if subTotal<2000:
     global total
     total=subTotal+tax
+def discountInfo ():
+    if subTotal>2000:
+        formatr("Discout",discount)
+        
+
 print("<<<<<<<<<<Receipt >>>>>>>>>>")
 formatr(item1,itemP1)
 formatr(item2,itemP2)
 formatr(item3,itemP3)
 formatr(item4,itemP4)
-if subTotal>2000:
-    formatr("Discout",discount)
+discountInfo()
 formatr("Subtotal ", subTotal)
 formatr("Total", total)
 print("____________________________")
