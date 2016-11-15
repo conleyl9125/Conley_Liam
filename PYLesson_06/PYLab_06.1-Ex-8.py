@@ -6,10 +6,11 @@ line2=3
 line3=1
 
 def printSong():
-    for i in range(0, 10):
-        print((lyric1[line1]))
-        print((lyric2[line2]))
-        print((lyric3[line3]))
+    for i in range(1):
+        print("na "*4)
+        print("na "*4)
+        print("hey "*3)
+        print("goodbye"*1)
 
 printSong()
 
