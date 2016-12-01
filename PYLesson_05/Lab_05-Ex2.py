@@ -9,20 +9,16 @@ itemP4=float(input("How much did it cost?"))
 
 def formatr(item, price):
     print("{:<10}\t{:12.2f}".format(item,price))
-
-subTotal=itemP1+itemP2+itemP3+itemP4
-discount=0.15
-tax=0.8*subTotal
-if subTotal>2000:
-    global total
-    total=subTotal*discount+tax
-if subTotal<2000:
-    global total
-    total=subTotal+tax
+    
 def discountInfo ():
+    global subTotal
     if subTotal>2000:
-        formatr("Discout",discount)
-        
+        return subTotal * 0.15
+
+subTotal = itemP1+itemP2+itemP3+itemP4
+discount = discountInfo()
+tax = 0.8*subTotal
+total = subTotal + tax - discount
 
 print("<<<<<<<<<<Receipt >>>>>>>>>>")
 formatr(item1,itemP1)
@@ -30,7 +26,8 @@ formatr(item2,itemP2)
 formatr(item3,itemP3)
 formatr(item4,itemP4)
 discountInfo()
-formatr("Subtotal ", subTotal)
+formatr("Subtotal
+        ", subTotal)
 formatr("Total", total)
 print("____________________________")
 print("Thank you!")
