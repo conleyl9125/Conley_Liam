@@ -10,3 +10,4 @@ def luck(number):
         return 0
     return 0
 print(luck(number))
+

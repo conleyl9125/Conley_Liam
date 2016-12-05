@@ -1,11 +1,15 @@
 words = ["hey", "hi", "hello", "sup", "greetings"]
 print("in order...")
-for i in words:
-    print(words[0:4])
+
+print(words)
 print("")
 print("Reversed...")
 
-reverse()
 
 def reverse():
-    while 
+    out = ""
+    for i in words:
+        out += i + " "
+    print(out)
+
+reverse()
