@@ -8,8 +8,8 @@ print("Reversed...")
 
 def reverse():
     out = ""
-    for i in words:
-        out += i + " "
+    for i in range(len(words)-1,-1,-1):
+        out += words[i] + " "
     print(out)
 
 reverse()

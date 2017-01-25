@@ -12,9 +12,9 @@ for i in range(0,4):
 for i in xAndO:
     output=""
     for value in xAndO:
-        print(output)
-        for value in xAndO:
-            output=value
+        output += "\n"
+        for piece in value:
+            output+=str(piece) + "\t"
             
 print(output)
 
