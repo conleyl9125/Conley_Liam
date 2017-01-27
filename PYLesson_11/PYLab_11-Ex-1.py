@@ -23,11 +23,17 @@ class MilesPerHour:
         self.mph=self.distance / (self.hours + self.minutes / 60)
         return self.mph
 
+    def __str__(self):
+        return "Customer Info...\nFirst Name: " + self.firstName + \
+                           "\nLast Name: " + self.lastName + \
+                           "\nAvatar: " + self.avatar + \
+                           "\nUser ID#: " + str(self.userID)
+
 def main():
     distance=float(input("Distance?"))
     hours=float(input("Hours?"))
     minutes=float(input("Minutes"))
     mlph = MilesPerHour(distance,hours,minutes)
-    print(mlph.getMPH())
+    print(user1.__str__())
 
 main()
