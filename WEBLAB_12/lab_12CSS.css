@@ -1,25 +1,94 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	font: bold 20px Arial;
+}
+
+h2 {
+	font: bold 14px Arial;
+}
+
+header, section, footer, aside, nav, article, hgroup {
+	display: block;
+}
+
+body {
+	width: 100%;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+}
+
+#bigWrapper {
+	max-width: 1000px;
+	margin: 20px 0px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-flex: 1;
+}
+
+#topHeader {
+	background: yellow;
+	border: 3px solid black;
+	padding: 20px;
+}
+
+#topMenu {
+	border: red;
+	background: blue;
+	color: white;
+}
+
+#topMenu li {
+	display: inline-block;
+	list-style: none;
+	padding: 5px;
+	font: bold 14px Tahoma;
+}
+
+#flexDiv {
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+}
+
+#mainSection {
+	border: 1px solid blue;
+	-webkit-box-flex: 1;
+	margin: 20px;
+	padding: 20px;
+}
+
+#sideNews {
+	border: 1px solid red;
+	width: 220px;
+	margin: 20px 0px;
+	padding: 30px;
+	background: purple;
+}
 body {
 	text-align: center;
 }
 
-#box {
+#title {
 	display: block;
-	width: 500px;
-	margin: 50px;
+	width: 200px;
+	
 	padding: 15px;
 	text-align: center;
+	margin: 50px;
 	border: 1px solid purple;
 	background: -webkit-radial-gradient(center, ellipse, green 0%, gold 100%);
 	outline: 7px solid purple;
 	-webkit-border-radius: 15px;
 	-webkit-box-shadow: rgb(110, 110, 110, .6) 10px 8px 8px;
-	-webkit-transition: -webkit-transform;
+	-webkit-transition:-webkit-transform .5s;
 }
 
-#button {
-	font-size: 30px;
+#sub-title {
 	display: block;
-	width: 200px;
+	width: 100px;
 	margin: 150px auto;
 	padding: 15px;
 	text-align: center;
@@ -28,15 +97,22 @@ body {
 	outline: 7px solid orange;
 	-webkit-border-radius: 15px;
 	-webkit-box-shadow: rgb(110, 110, 110, .6) 10px 8px 8px;
-	-webkit-transition: -webkit-transform;
-}
+	-webkit-transition: -webkit-transform .5s;
 }
 
-#box:hover {
+#title:hover {
 	-webkit-transform: rotate(45deg);
 }
 
+#sub-title:hover {
+	-webkit-transform: rotate(-45deg);
+}
+
 #text {
-	font: bold 30px Century Gothic;
+	font: bold 20px Century Gothic;
 	text-shadow: rgb(50, 50, 50) 1px 1px 3px;
+}
+
+#text2 {
+	font: bold 10px Century Gothic;
 }
