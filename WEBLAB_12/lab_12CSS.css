@@ -37,7 +37,7 @@ body {
 
 #topMenu {
 	border: red;
-	background: blue;
+	background: green;
 	color: white;
 }
 
@@ -54,7 +54,7 @@ body {
 }
 
 #mainSection {
-	border: 1px solid blue;
+	border: 1px solid yellow;
 	-webkit-box-flex: 1;
 	margin: 20px;
 	padding: 20px;
@@ -86,13 +86,34 @@ body {
 	-webkit-transition:-webkit-transform .5s;
 }
 #button1 {
-	
+	display: block;
+	width: 40px;
+	margin: 10px auto;
+	padding: 15px;
+	background: -webkit-radial-gradient(center, ellipse, gold 0%, blue 100%);
+	-webkit-border-radius: 15px;
+	-webkit-box-shadow: rgb(110, 110, 110, .6) 10px 8px 8px;
+	-webkit-transition: -webkit-transform .5s;
 }
 #button2 {
-	
+	display: block;
+	width: 40px;
+	margin: 10px auto;
+	padding: 15px;
+	background: -webkit-radial-gradient(center, ellipse, gold 0%, blue 100%);
+	-webkit-border-radius: 15px;
+	-webkit-box-shadow: rgb(110, 110, 110, .6) 10px 8px 8px;
+	-webkit-transition: -webkit-transform .5s;
 }
 #button3 {
-	
+	display: block;
+	width: 40px;
+	margin: 10px auto;
+	padding: 15px;
+	background: -webkit-radial-gradient(center, ellipse, gold 0%, blue 100%);
+	-webkit-border-radius: 15px;
+	-webkit-box-shadow: rgb(110, 110, 110, .6) 10px 8px 8px;
+	-webkit-transition: -webkit-transform .5s;
 }
 
 #sub-title {
@@ -107,6 +128,18 @@ body {
 	-webkit-border-radius: 15px;
 	-webkit-box-shadow: rgb(110, 110, 110, .6) 10px 8px 8px;
 	-webkit-transition: -webkit-transform .5s;
+}
+
+#button1:hover {
+	-webkit-transform: scale(2,2);
+}
+
+#button2:hover {
+	-webkit-transform: scale(2,2);
+}
+
+#button3:hover {
+	-webkit-transform: scale(2,2);
 }
 
 #title:hover {
